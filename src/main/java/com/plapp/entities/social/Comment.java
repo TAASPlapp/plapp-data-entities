@@ -1,11 +1,15 @@
 package com.plapp.entities.social;
 
+import java.util.Date;
+
 public class Comment {
     private MediaContentType mediaContentType;
     private long itemId;
 
     private UserDetails author;
     private String content;
+
+    private Date publishedAt;
 
     public Comment(MediaContentType mediaContentType, long itemId, UserDetails author, String content) {
         this.mediaContentType = mediaContentType;
@@ -32,5 +36,13 @@ public class Comment {
 
     public MediaContentType getMediaContentType() {
         return mediaContentType;
+    }
+
+    public Date getPublishedAt() {
+        return publishedAt;
+    }
+
+    public void setPublishedAt(Date publishedAt) {
+        this.publishedAt = publishedAt;
     }
 }
