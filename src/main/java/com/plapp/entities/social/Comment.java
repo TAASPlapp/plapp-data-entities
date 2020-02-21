@@ -1,17 +1,17 @@
 package com.plapp.entities.social;
 
 public class Comment {
-    private long userId;
+    private UserDetails author;
     private String content;
     private long storyboardId;
     private long storyboardItemId;
 
-    public long getUserId() {
-        return userId;
+    public UserDetails getAuthor() {
+        return author;
     }
 
-    public void setUserId(long userId) {
-        this.userId = userId;
+    public void setAuthor(UserDetails author) {
+        this.author = author;
     }
 
     public String getContent() {
