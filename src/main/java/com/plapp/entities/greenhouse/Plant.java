@@ -4,6 +4,7 @@ public class Plant {
     public enum PlantHealthStatus { HEALTHY, SICK };
 
     private long id;
+    private long owner;
     private String name;
     private String description;
     private String type;
@@ -16,6 +17,14 @@ public class Plant {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public long getOwner() {
+        return owner;
+    }
+
+    public void setOwner(long owner) {
+        this.owner = owner;
     }
 
     public String getName() {
