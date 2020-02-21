@@ -3,12 +3,21 @@ package com.plapp.entities.social;
 import java.util.Date;
 
 public class UserDetails {
+    private long userId;
     private String username;
     private String firstName;
     private String lastName;
     private String bio;
     private Date birthdate;
     private String profilePicture;
+
+    public UserDetails(long userId) {
+        this.userId = userId;
+    }
+
+    public long getUserId() {
+        return userId;
+    }
 
     public String getUsername() {
         return username;
