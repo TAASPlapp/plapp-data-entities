@@ -3,6 +3,8 @@ package com.plapp.entities.social;
 import java.util.Date;
 
 public class Comment {
+    private long id;
+
     private MediaContentType mediaContentType;
     private long itemId;
 
@@ -11,11 +13,14 @@ public class Comment {
 
     private Date publishedAt;
 
-    public Comment(MediaContentType mediaContentType, long itemId, UserDetails author, String content) {
+    public Comment(MediaContentType mediaContentType, long itemId, UserDetails author) {
         this.mediaContentType = mediaContentType;
         this.itemId = itemId;
         this.author = author;
-        this.content = content;
+    }
+
+    public long getId() {
+        return id;
     }
 
     public UserDetails getAuthor() {
