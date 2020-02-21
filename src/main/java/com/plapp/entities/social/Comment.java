@@ -1,17 +1,21 @@
 package com.plapp.entities.social;
 
 public class Comment {
+    private MediaContentType mediaContentType;
+    private long itemId;
+
     private UserDetails author;
     private String content;
-    private long storyboardId;
-    private long storyboardItemId;
+
+    public Comment(MediaContentType mediaContentType, long itemId, UserDetails author, String content) {
+        this.mediaContentType = mediaContentType;
+        this.itemId = itemId;
+        this.author = author;
+        this.content = content;
+    }
 
     public UserDetails getAuthor() {
         return author;
-    }
-
-    public void setAuthor(UserDetails author) {
-        this.author = author;
     }
 
     public String getContent() {
@@ -22,19 +26,11 @@ public class Comment {
         this.content = content;
     }
 
-    public long getStoryboardId() {
-        return storyboardId;
+    public long getItemId() {
+        return itemId;
     }
 
-    public void setStoryboardId(long storyboardId) {
-        this.storyboardId = storyboardId;
-    }
-
-    public long getStoryboardItemId() {
-        return storyboardItemId;
-    }
-
-    public void setStoryboardItemId(long storyboardItemId) {
-        this.storyboardItemId = storyboardItemId;
+    public MediaContentType getMediaContentType() {
+        return mediaContentType;
     }
 }
