@@ -10,7 +10,8 @@ public class ScheduleAction {
     private int periodicity;
 
 
-    public ScheduleAction(long plantId, Date date, String action, int periodicity) {
+    public ScheduleAction(long userId, long plantId, Date date, String action, int periodicity) {
+        this.userId = userId;
         this.plantId = plantId;
         this.date = date;
         this.action = action;
