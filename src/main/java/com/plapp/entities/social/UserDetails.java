@@ -11,12 +11,33 @@ public class UserDetails {
     private Date birthdate;
     private String profilePicture;
 
+    public UserDetails() {
+
+    }
+
     public UserDetails(long userId) {
         this.userId = userId;
     }
 
+    public UserDetails(long userId, String username, String firstName,
+                       String lastName, String bio, Date birthdate,
+                       String profilePicture) {
+        this.userId = userId;
+        this.username = username;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.bio = bio;
+        this.birthdate = birthdate;
+        this.profilePicture = profilePicture;
+    }
+
+
     public long getUserId() {
         return userId;
+    }
+
+    public void setUserId(long userId) {
+        this.userId = userId;
     }
 
     public String getUsername() {

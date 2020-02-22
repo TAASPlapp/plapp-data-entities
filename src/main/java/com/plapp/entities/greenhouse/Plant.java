@@ -11,12 +11,33 @@ public class Plant {
     private PlantHealthStatus status;
     private String image;
 
+    public Plant() {
+
+    }
+
     public Plant(long id) {
         this.id = id;
     }
 
+    public Plant(long id, long owner, String name,
+                 String description, String type,
+                 PlantHealthStatus status, String image) {
+        this.id = id;
+        this.owner = owner;
+        this.name = name;
+        this.description = description;
+        this.type = type;
+        this.status = status;
+        this.image = image;
+    }
+
+
     public long getId() {
         return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public long getOwner() {

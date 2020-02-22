@@ -13,18 +13,41 @@ public class Comment {
 
     private Date publishedAt;
 
+    public Comment() {
+
+    }
+
     public Comment(MediaContentType mediaContentType, long itemId, UserDetails author) {
         this.mediaContentType = mediaContentType;
         this.itemId = itemId;
         this.author = author;
     }
 
+    public Comment(long id, MediaContentType mediaContentType, long itemId,
+                   UserDetails author, String content, Date publishedAt) {
+        this.id = id;
+        this.mediaContentType = mediaContentType;
+        this.itemId = itemId;
+        this.author = author;
+        this.content = content;
+        this.publishedAt = publishedAt;
+    }
+
+
     public long getId() {
         return id;
     }
 
+    public void setId() {
+        this.id = id;
+    }
+
     public UserDetails getAuthor() {
         return author;
+    }
+
+    public void setAuthor(UserDetails author) {
+        this.author = author;
     }
 
     public String getContent() {

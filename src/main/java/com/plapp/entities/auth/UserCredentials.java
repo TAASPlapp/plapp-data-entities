@@ -8,8 +8,22 @@ public class UserCredentials {
 
     private String password;
 
+    public UserCredentials() {
+
+    }
+
+    public UserCredentials(long id, String email, String password) {
+        this.id = id;
+        this.email = email;
+        this.password = password;
+    }
+
     public long getId() {
         return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getEmail() {

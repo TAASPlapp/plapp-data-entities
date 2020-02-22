@@ -9,6 +9,9 @@ public class ScheduleAction {
     private Date date;
     private int periodicity;
 
+    public ScheduleAction() {
+
+    }
 
     public ScheduleAction(long userId, long plantId, Date date, String action, int periodicity) {
         this.userId = userId;

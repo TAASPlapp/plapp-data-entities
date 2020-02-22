@@ -39,12 +39,32 @@ public class Storyboard {
     private int numLikes;
     private List<StoryboardItem> storyboardItems;
 
+    public Storyboard() {
+
+    }
+
     public Storyboard(long id) {
         this.id = id;
     }
 
+    public Storyboard(long id, String summary, Plant plant,
+                      Date lastModified, int numLikes,
+                      List<StoryboardItem> storyboardItems) {
+        this.id = id;
+        this.summary = summary;
+        this.plant = plant;
+        this.lastModified = lastModified;
+        this.numLikes = numLikes;
+        this.storyboardItems = storyboardItems;
+    }
+
+
     public long getId() {
         return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getSummary() {
