@@ -20,6 +20,10 @@ public class StoryboardItem {
     private Plant.PlantHealthStatus status;
     private int numLikes;
 
+    public StoryboardItem(long id) {
+        this.id = id;
+    }
+
     public long getId() {
         return id;
     }

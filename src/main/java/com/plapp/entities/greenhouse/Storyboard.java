@@ -39,6 +39,10 @@ public class Storyboard {
     private int numLikes;
     private List<StoryboardItem> storyboardItems;
 
+    public Storyboard(long id) {
+        this.id = id;
+    }
+
     public long getId() {
         return id;
     }

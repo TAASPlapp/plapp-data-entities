@@ -11,6 +11,10 @@ public class Plant {
     private PlantHealthStatus status;
     private String image;
 
+    public Plant(long id) {
+        this.id = id;
+    }
+
     public long getId() {
         return id;
     }
