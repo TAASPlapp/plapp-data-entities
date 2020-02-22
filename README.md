@@ -27,7 +27,7 @@
 1.  Add in resources/applications.properties:
     ```spring.jpa.mapping-resources=META-INF/orm.xml```
 
-2. Create resources/META-INF/perstistence.xml:
+2. Create resources/META-INF/persistence.xml:
     ```xml
     <?xml version="1.0" encoding="UTF-8" ?>
     <persistence xmlns="http://java.sun.com/xml/ns/persistence">
