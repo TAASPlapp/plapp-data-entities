@@ -15,10 +15,6 @@ public class Plant {
         return id;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
     public long getOwner() {
         return owner;
     }
