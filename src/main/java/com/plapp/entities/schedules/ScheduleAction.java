@@ -8,17 +8,19 @@ public class ScheduleAction {
     private String action;
     private Date date;
     private int periodicity;
+    private String additionalInfo;
 
     public ScheduleAction() {
 
     }
 
-    public ScheduleAction(long userId, long plantId, Date date, String action, int periodicity) {
+    public ScheduleAction(long userId, long plantId, Date date, String action, int periodicity, String additionalInfo) {
         this.userId = userId;
         this.plantId = plantId;
         this.date = date;
         this.action = action;
         this.periodicity = periodicity;
+        this.additionalInfo = additionalInfo;
     }
 
     public long getUserId() { return userId; }
@@ -67,5 +69,13 @@ public class ScheduleAction {
 
     public void setPeriodicity(int periodicity) {
         this.periodicity = periodicity;
+    }
+
+    public String getAdditionalInfo() {
+        return additionalInfo;
+    }
+
+    public void setAdditionalInfo(String additionalInfo) {
+        this.additionalInfo = additionalInfo;
     }
 }
