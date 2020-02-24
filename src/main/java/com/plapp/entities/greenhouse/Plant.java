@@ -1,5 +1,7 @@
 package com.plapp.entities.greenhouse;
 
+import java.util.Objects;
+
 public class Plant {
     public enum PlantHealthStatus { HEALTHY, SICK };
 
@@ -86,5 +88,24 @@ public class Plant {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Plant plant = (Plant) o;
+        return id == plant.id &&
+                owner == plant.owner &&
+                Objects.equals(name, plant.name) &&
+                Objects.equals(description, plant.description) &&
+                Objects.equals(type, plant.type) &&
+                status == plant.status &&
+                Objects.equals(image, plant.image);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, owner, name, description, type, status, image);
     }
 }
