@@ -2,72 +2,51 @@ package com.plapp.entities.social;
 
 import java.util.Date;
 
-public class Comment {
+public class Like {
     private long id;
-
     private MediaContentType mediaContentType;
     private long itemId;
-
     private UserDetails author;
-    private String content;
-
     private Date publishedAt;
 
-    public Comment() {
-
-    }
-
-    public Comment(MediaContentType mediaContentType, long itemId, UserDetails author) {
-        this.mediaContentType = mediaContentType;
-        this.itemId = itemId;
-        this.author = author;
-    }
-
-    public Comment(long id, MediaContentType mediaContentType, long itemId,
-                   UserDetails author, String content, Date publishedAt) {
+    public Like(long id, MediaContentType mediaContentType, long itemId, UserDetails author, Date publishedAt) {
         this.id = id;
         this.mediaContentType = mediaContentType;
         this.itemId = itemId;
         this.author = author;
-        this.content = content;
         this.publishedAt = publishedAt;
     }
 
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public UserDetails getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(UserDetails author) {
+    public Like(MediaContentType mediaContentType, long itemId, UserDetails author) {
+        this.mediaContentType = mediaContentType;
+        this.itemId = itemId;
         this.author = author;
     }
 
-    public String getContent() {
-        return content;
-    }
+    public Like() {}
 
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public long getItemId() {
-        return itemId;
+    public long getId() {
+        return id;
     }
 
     public MediaContentType getMediaContentType() {
         return mediaContentType;
     }
 
+    public long getItemId() {
+        return itemId;
+    }
+
+    public UserDetails getAuthor() {
+        return author;
+    }
+
     public Date getPublishedAt() {
         return publishedAt;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public void setMediaContentType(MediaContentType mediaContentType) {
@@ -76,6 +55,10 @@ public class Comment {
 
     public void setItemId(long itemId) {
         this.itemId = itemId;
+    }
+
+    public void setAuthor(UserDetails author) {
+        this.author = author;
     }
 
     public void setPublishedAt(Date publishedAt) {
