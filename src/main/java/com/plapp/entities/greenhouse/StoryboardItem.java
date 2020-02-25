@@ -2,6 +2,7 @@ package com.plapp.entities.greenhouse;
 
 public class StoryboardItem {
     private long id;
+    private long storyboardId;
     private String image;
     private String thumbImage;
     private String description;
@@ -17,10 +18,11 @@ public class StoryboardItem {
         this.id = id;
     }
 
-    public StoryboardItem(long id, String image,
+    public StoryboardItem(long id, long storyboardId, String image,
                           String thumbImage, String description,
                           String title, Plant.PlantHealthStatus status, int numLikes) {
         this.id = id;
+        this.storyboardId = storyboardId;
         this.image = image;
         this.thumbImage = thumbImage;
         this.description = description;
@@ -36,6 +38,12 @@ public class StoryboardItem {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public long getStoryboardId() { return storyboardId; }
+
+    public void setStoryboardId(long storyboardId) {
+        this.storyboardId = storyboardId;
     }
 
     public String getImage() {
