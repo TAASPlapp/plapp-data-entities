@@ -8,7 +8,6 @@ public class StoryboardItem {
     private String description;
     private String title;
     private Plant.PlantHealthStatus status;
-    private int numLikes;
 
     public StoryboardItem() {
 
@@ -20,7 +19,7 @@ public class StoryboardItem {
 
     public StoryboardItem(long id, long storyboardId, String image,
                           String thumbImage, String description,
-                          String title, Plant.PlantHealthStatus status, int numLikes) {
+                          String title, Plant.PlantHealthStatus status) {
         this.id = id;
         this.storyboardId = storyboardId;
         this.image = image;
@@ -28,7 +27,6 @@ public class StoryboardItem {
         this.description = description;
         this.title = title;
         this.status = status;
-        this.numLikes = numLikes;
     }
 
 
@@ -84,13 +82,5 @@ public class StoryboardItem {
 
     public void setStatus(Plant.PlantHealthStatus status) {
         this.status = status;
-    }
-
-    public int getNumLikes() {
-        return numLikes;
-    }
-
-    public void setNumLikes(int numLikes) {
-        this.numLikes = numLikes;
     }
 }

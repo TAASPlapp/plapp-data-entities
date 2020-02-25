@@ -36,25 +36,18 @@ public class Storyboard {
     private String summary;
     private Plant plant;
     private Date lastModified;
-    private int numLikes;
     private List<StoryboardItem> storyboardItems;
 
     public Storyboard() {
 
     }
 
-    public Storyboard(long id) {
-        this.id = id;
-    }
-
     public Storyboard(long id, String summary, Plant plant,
-                      Date lastModified, int numLikes,
-                      List<StoryboardItem> storyboardItems) {
+                      Date lastModified, List<StoryboardItem> storyboardItems) {
         this.id = id;
         this.summary = summary;
         this.plant = plant;
         this.lastModified = lastModified;
-        this.numLikes = numLikes;
         this.storyboardItems = storyboardItems;
     }
 
@@ -89,14 +82,6 @@ public class Storyboard {
 
     public void setLastModified(Date lastModified) {
         this.lastModified = lastModified;
-    }
-
-    public int getNumLikes() {
-        return numLikes;
-    }
-
-    public void setNumLikes(int numLikes) {
-        this.numLikes = numLikes;
     }
 
     public List<StoryboardItem> getStoryboardItems() {
