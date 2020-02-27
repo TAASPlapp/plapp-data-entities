@@ -1,4 +1,4 @@
-package com.plappgardenerservice.entities;
+package com.plapp.entities.schedules;
 
 
 public class Diagnosis {
