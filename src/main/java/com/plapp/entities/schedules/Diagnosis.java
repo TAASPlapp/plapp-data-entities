@@ -4,25 +4,25 @@ package com.plapp.entities.schedules;
 public class Diagnosis {
 
 
-    private String plantID;
+    private String plantId;
     private boolean ill;
     private String disease;
 
     public Diagnosis(){}
 
-    public Diagnosis(String plantID, boolean ill, String disease) {
-        this.plantID = plantID;
+    public Diagnosis(String plantId, boolean ill, String disease) {
+        this.plantId = plantId;
         this.ill = ill;
         this.disease = disease;
     }
 
 
-    public String getPlantID() {
-        return plantID;
+    public String getPlantId() {
+        return plantId;
     }
 
-    public void setPlantID(String plantID) {
-        this.plantID = plantID;
+    public void setPlantId(String plantId) {
+        this.plantId = plantId;
     }
 
     public boolean isIll() {
@@ -44,7 +44,7 @@ public class Diagnosis {
     @Override
     public String toString() {
         return "Diagnosis{" +
-                "plantID='" + plantID + '\'' +
+                "plantID='" + plantId + '\'' +
                 ", ill=" + ill +
                 ", disease='" + disease + '\'' +
                 '}';
