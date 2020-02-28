@@ -41,13 +41,7 @@ public class ScheduleAction implements Serializable {
         return action;
     }
     
-    public long getScheduleActionId(){
-        return scheduleActionId;
-    }
 
-    public void setScheduleActionId(long scheduleActionId) {
-        this.scheduleActionId = scheduleActionId;
-    }
 
     public void setUserId(long userId) {
         this.userId = userId;
