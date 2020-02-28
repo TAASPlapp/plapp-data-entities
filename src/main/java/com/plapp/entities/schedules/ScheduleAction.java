@@ -25,6 +25,8 @@ public class ScheduleAction implements Serializable {
         this.additionalInfo = additionalInfo;
     }
 
+    public long getScheduleActionId() { return scheduleActionId; }
+    
     public long getUserId() { return userId; }
 
     public long getPlantId() {
@@ -49,6 +51,10 @@ public class ScheduleAction implements Serializable {
 
     public void setUserId(long userId) {
         this.userId = userId;
+    }
+    
+    public void setScheduleActionId(long scheduleActionId) {
+        this.scheduleActionId = scheduleActionId;
     }
 
     public void setPlantId(long plantId) {
