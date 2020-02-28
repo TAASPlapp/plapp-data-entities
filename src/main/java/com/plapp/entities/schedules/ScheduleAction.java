@@ -1,8 +1,9 @@
 package com.plapp.entities.schedules;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class ScheduleAction {
+public class ScheduleAction implements Serializable {
     private long userId;
     private long plantId;
     private String action;
