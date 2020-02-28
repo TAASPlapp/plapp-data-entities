@@ -4,11 +4,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class ScheduleAction implements Serializable {
-    //private long userId;
-    //private long plantId;
-    //private String action;
-    //private Date date;
-    private ScheduleActionID scheduleActionId;
+    private long userId;
+    private long plantId;
+    private String action;
+    private Date date;
     private int periodicity;
     private String additionalInfo;
 
@@ -16,13 +15,6 @@ public class ScheduleAction implements Serializable {
 
     }
     
-    public ScheduleAction(ScheduleActionID scheduleActionId, int periodicity, String additionalInfo) {
-        this.scheduleActionId = scheduleActionId;
-        this.periodicity = periodicity;
-        this.additionalInfo = additionalInfo;
-    }
-    
-    /*
     public ScheduleAction(long userId, long plantId, Date date, String action, int periodicity, String additionalInfo) {
         this.userId = userId;
         this.plantId = plantId;
@@ -63,17 +55,6 @@ public class ScheduleAction implements Serializable {
     public void setDate(Date date) {
         this.date = date;
     }
-    
-    */
-    
-    public void setScheduleActionId(ScheduleActionID scheduleActionId){
-        this.scheduleActionId = scheduleActionId;
-    }
-    
-    public ScheduleActionID getScheduleActionId(){
-        return scheduleActionId;
-    }
-
 
     public String getAdditionalInfo() {
         return additionalInfo;
@@ -94,7 +75,10 @@ public class ScheduleAction implements Serializable {
     @Override
     public String toString() {
         return "ScheduleAction{" +
-                ", scheduleActionId=" + scheduleActionId +
+                ", userId='" + userId +
+                ", plantId='" + plantId +
+                ", action='" + action +
+                ", date='" + date +
                 ", periodicity='" + periodicity +
                 ", additionalInfo='" + additionalInfo + '\'' +
                 '}';
