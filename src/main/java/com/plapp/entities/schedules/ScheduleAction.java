@@ -46,19 +46,7 @@ public class ScheduleAction implements Serializable {
         return action;
     }
 
-    public int getPeriodicity() {
-        return periodicity;
-    }
 
-    @Override
-    public String toString() {
-        return "ScheduleAction{" +
-                ", plantId=" + plantId +
-                ", date=" + date +
-                ", action='" + action +
-                ", periodicity='" + periodicity + '\'' +
-                '}';
-    }
 
     public void setUserId(long userId) {
         this.userId = userId;
@@ -86,9 +74,6 @@ public class ScheduleAction implements Serializable {
         return scheduleActionId;
     }
 
-    public void setPeriodicity(int periodicity) {
-        this.periodicity = periodicity;
-    }
 
     public String getAdditionalInfo() {
         return additionalInfo;
@@ -96,5 +81,22 @@ public class ScheduleAction implements Serializable {
 
     public void setAdditionalInfo(String additionalInfo) {
         this.additionalInfo = additionalInfo;
+    }
+    
+        public int getPeriodicity() {
+        return periodicity;
+    }
+    
+        public void setPeriodicity(int periodicity) {
+        this.periodicity = periodicity;
+    }
+
+    @Override
+    public String toString() {
+        return "ScheduleAction{" +
+                ", scheduleActionId=" + scheduleActionId +
+                ", periodicity='" + periodicity +
+                ", additionalInfo='" + additionalInfo + '\'' +
+                '}';
     }
 }
