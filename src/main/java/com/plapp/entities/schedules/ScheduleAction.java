@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class ScheduleAction implements Serializable {
+    private long scheduleActionId;
     private long userId;
     private long plantId;
     private String action;
@@ -37,8 +38,14 @@ public class ScheduleAction implements Serializable {
     public String getAction() {
         return action;
     }
+    
+    public long getScheduleActionId(){
+        return scheduleActionId;
+    }
 
-
+    public void setScheduleActionId(long scheduleActionId) {
+        this.scheduleActionId = scheduleActionId;
+    }
 
     public void setUserId(long userId) {
         this.userId = userId;
