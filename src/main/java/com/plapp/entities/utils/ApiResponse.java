@@ -30,5 +30,5 @@ public class ApiResponse<T> {
 
     public Boolean getSuccess() { return success; }
     public String getMessage() { return message; }
-    public T getContent() { return extraObject; }
+    public T getContent() { return content; }
 }
