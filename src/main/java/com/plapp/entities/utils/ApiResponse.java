@@ -19,6 +19,10 @@ public class ApiResponse<T> {
         this(success, null);
     }
 
+    public ApiResponse(T extraObject) {
+        this(true, null, extraObject);
+    }
+
     public ApiResponse() {
         this(true);
     }
