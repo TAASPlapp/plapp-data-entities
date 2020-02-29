@@ -82,7 +82,7 @@ public class ScheduleAction implements Serializable {
     @Override
     public String toString() {
         return "ScheduleAction{" +
-                ", userId='" + userId +
+                "userId='" + userId +
                 ", plantId='" + plantId +
                 ", action='" + action +
                 ", date='" + date +
