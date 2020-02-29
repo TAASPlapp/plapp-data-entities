@@ -3,12 +3,12 @@ package com.plapp.entities.utils;
 public class ApiResponse<T> {
     private Boolean success;
     private String message;
-    private T extraObject;
+    private T content;
 
-    public ApiResponse(Boolean success, String message, T extraObject) {
+    public ApiResponse(Boolean success, String message, T content) {
         this.success = success;
         this.message = message;
-        this.extraObject = extraObject;
+        this.content = extraObject;
     }
 
     public ApiResponse(Boolean success, String message) {
@@ -30,5 +30,5 @@ public class ApiResponse<T> {
 
     public Boolean getSuccess() { return success; }
     public String getMessage() { return message; }
-    public T getExtraObject() { return extraObject; }
+    public T getContent() { return extraObject; }
 }
