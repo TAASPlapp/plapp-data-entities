@@ -1,8 +1,8 @@
 package com.plapp.entities.schedules;
 
+import java.io.Serializable;
 
-public class Diagnosis {
-
+public class Diagnosis implements Serializable {
 
     private String plantId;
     private boolean ill;
