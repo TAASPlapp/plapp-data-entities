@@ -8,7 +8,7 @@ public class ApiResponse<T> {
     public ApiResponse(Boolean success, String message, T content) {
         this.success = success;
         this.message = message;
-        this.content = extraObject;
+        this.content = content;
     }
 
     public ApiResponse(Boolean success, String message) {
