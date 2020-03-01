@@ -44,7 +44,7 @@ public class Diagnosis implements Serializable {
     @Override
     public String toString() {
         return "Diagnosis{" +
-                "plantID='" + plantId + '\'' +
+                "plantId='" + plantId + '\'' +
                 ", ill=" + ill +
                 ", disease='" + disease + '\'' +
                 '}';
