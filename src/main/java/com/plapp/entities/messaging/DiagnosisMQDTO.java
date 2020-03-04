@@ -1,12 +1,10 @@
 package com.plapp.entities.messaging;
 
-//import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import com.plapp.entities.greenhouse.Plant;
 
 public class DiagnosisMQDTO {
 
     private long userId;
-    //@JsonUnwrapped
     private Plant plant;
     private boolean ill;
     private String disease;
