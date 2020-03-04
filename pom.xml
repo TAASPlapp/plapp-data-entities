@@ -9,17 +9,13 @@
     <url>https://github.com/TAASPlapp/plapp-data-entities</url>
     
          <dependencies>
-                  <dependency>
-                           <groupId>com.github.fasterxml</groupId>
-                           <artifactId>jackson-core</artifactId>
-                           <version>jackson-core-2.10.3</version>
-                  </dependency>
+                  <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+			<dependency>
+			    <groupId>com.fasterxml.jackson.core</groupId>
+			    <artifactId>jackson-databind</artifactId>
+			    <version>2.10.3</version>
+			</dependency>
                   
-                  <dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>2.9.10.1</version>
-		</dependency>
          </dependencies>
 
     <build>
