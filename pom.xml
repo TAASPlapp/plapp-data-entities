@@ -7,6 +7,14 @@
     <artifactId>plapp-data-entities</artifactId>
     <version>1.0-SNAPSHOT</version>
     <url>https://github.com/TAASPlapp/plapp-data-entities</url>
+    
+         <dependencies>
+                  <dependency>
+                           <groupId>com.github.fasterxml</groupId>
+                           <artifactId>jackson-core</artifactId>
+                           <version>jackson-core-2.10.3</version>
+                  </dependency>
+         </dependencies>
 
     <build>
         <plugins>
