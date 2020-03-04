@@ -2,7 +2,7 @@ package com.plapp.entities.greenhouse;
 
 import java.util.Objects;
 
-public class Plant {
+public class Plant implements Serializable{
     public enum PlantHealthStatus { HEALTHY, SICK };
 
     private long id;
