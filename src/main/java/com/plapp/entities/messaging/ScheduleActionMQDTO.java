@@ -1,10 +1,12 @@
 package com.plapp.entities.messaging;
 
+import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import com.plapp.entities.greenhouse.Plant;
 import java.util.Date;
 
 public class ScheduleActionMQDTO {
     private long userId;
+    @JsonUnwrapped
     private Plant plant;
     private String action;
     private Date date;
