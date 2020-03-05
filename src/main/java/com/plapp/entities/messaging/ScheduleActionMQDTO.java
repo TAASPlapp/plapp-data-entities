@@ -12,6 +12,17 @@ public class ScheduleActionMQDTO {
     private Date date;
     private int periodicity;
     private String additionalInfo;
+    
+    public ScheduleActionMQDTO(){}
+    
+    public ScheduleActionMQDTO(long userId, Plant plant, String action, Date date, int periodicity, String additionalInfo){
+        this.userId = userId;
+        this.plant = plant;
+        this.action = action;
+        this.date = date;
+        this.periodicity = periodicity;
+        this.additionalInfo = additionalInfo;
+    }
 
     public long getUserId() {
         return userId;
