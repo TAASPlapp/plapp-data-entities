@@ -41,5 +41,9 @@ public class UserCredentials {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public String toString() {
+        return String.format("{ id: %d, email: %s, password: %s}", id, email, password);
+    }
 }
 
