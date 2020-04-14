@@ -5,6 +5,19 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class Plant implements Serializable{
+    @Override
+    public String toString() {
+        return "Plant{" +
+                "id=" + id +
+                ", owner=" + owner +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", type='" + type + '\'' +
+                ", status=" + status +
+                ", image='" + image + '\'' +
+                '}';
+    }
+
     public enum PlantHealthStatus { HEALTHY, SICK };
 
     private long id;

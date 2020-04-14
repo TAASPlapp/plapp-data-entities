@@ -61,4 +61,15 @@ public class ScheduleActionMQDTO {
     public void setAdditionalInfo(String additionalInfo) {
         this.additionalInfo = additionalInfo;
     }
+
+    @Override
+    public String toString() {
+        return "ScheduleActionMQDTO{" +
+                "plant=" + plant +
+                ", action='" + action + '\'' +
+                ", date=" + date +
+                ", periodicity=" + periodicity +
+                ", additionalInfo='" + additionalInfo + '\'' +
+                '}';
+    }
 }

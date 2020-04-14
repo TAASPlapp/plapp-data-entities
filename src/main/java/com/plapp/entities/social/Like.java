@@ -64,4 +64,15 @@ public class Like {
     public void setPublishedAt(Date publishedAt) {
         this.publishedAt = publishedAt;
     }
+
+    @Override
+    public String toString() {
+        return "Like{" +
+                "id=" + id +
+                ", mediaContentType=" + mediaContentType +
+                ", itemId=" + itemId +
+                ", author=" + author +
+                ", publishedAt=" + publishedAt +
+                '}';
+    }
 }

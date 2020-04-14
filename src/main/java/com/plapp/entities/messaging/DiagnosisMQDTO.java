@@ -29,4 +29,12 @@ public class DiagnosisMQDTO {
     public void setDisease(String disease) {
         this.disease = disease;
     }
+
+    @Override
+    public String toString() {
+        return "DiagnosisMQDTO{" +
+                "plant=" + plant +
+                ", disease='" + disease + '\'' +
+                '}';
+    }
 }

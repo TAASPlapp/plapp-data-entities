@@ -83,4 +83,17 @@ public class StoryboardItem {
     public void setStatus(Plant.PlantHealthStatus status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "StoryboardItem{" +
+                "id=" + id +
+                ", storyboardId=" + storyboardId +
+                ", image='" + image + '\'' +
+                ", thumbImage='" + thumbImage + '\'' +
+                ", description='" + description + '\'' +
+                ", title='" + title + '\'' +
+                ", status=" + status +
+                '}';
+    }
 }

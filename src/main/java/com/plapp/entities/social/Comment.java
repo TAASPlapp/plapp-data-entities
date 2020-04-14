@@ -81,4 +81,16 @@ public class Comment {
     public void setPublishedAt(Date publishedAt) {
         this.publishedAt = publishedAt;
     }
+
+    @Override
+    public String toString() {
+        return "Comment{" +
+                "id=" + id +
+                ", mediaContentType=" + mediaContentType +
+                ", itemId=" + itemId +
+                ", author=" + author +
+                ", content='" + content + '\'' +
+                ", publishedAt=" + publishedAt +
+                '}';
+    }
 }

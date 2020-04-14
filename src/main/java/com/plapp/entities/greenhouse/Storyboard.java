@@ -91,4 +91,15 @@ public class Storyboard {
     public void setStoryboardItems(List<StoryboardItem> storyboardItems) {
         this.storyboardItems = storyboardItems;
     }
+
+    @Override
+    public String toString() {
+        return "Storyboard{" +
+                "id=" + id +
+                ", summary='" + summary + '\'' +
+                ", plant=" + plant +
+                ", lastModified=" + lastModified +
+                ", storyboardItems=" + storyboardItems +
+                '}';
+    }
 }
