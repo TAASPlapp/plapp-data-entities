@@ -11,6 +11,10 @@ public class DiagnosisMQDTO implements Serializable {
     private Plant plant;
     private String disease;
 
+    public DiagnosisMQDTO() {
+
+    }
+
     public DiagnosisMQDTO(Plant plant, String disease) {
         this.plant = plant;
         this.disease = disease;
