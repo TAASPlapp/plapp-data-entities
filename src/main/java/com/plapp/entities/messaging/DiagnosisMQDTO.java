@@ -3,7 +3,9 @@ package com.plapp.entities.messaging;
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import com.plapp.entities.greenhouse.Plant;
 
-public class DiagnosisMQDTO {
+import java.io.Serializable;
+
+public class DiagnosisMQDTO implements Serializable {
 
     @JsonUnwrapped
     private Plant plant;

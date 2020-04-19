@@ -2,9 +2,11 @@ package com.plapp.entities.messaging;
 
 import com.fasterxml.jackson.annotation.JsonUnwrapped;
 import com.plapp.entities.greenhouse.Plant;
+
+import java.io.Serializable;
 import java.util.Date;
 
-public class ScheduleActionMQDTO {
+public class ScheduleActionMQDTO implements Serializable {
     @JsonUnwrapped
     private Plant plant;
     private String action;
